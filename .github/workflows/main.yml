@@ -13,8 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github action'
-        run: pwd
+      - name: 'Before'
+        run: ls
 
-      - name: 'Testing Printing'
-        run: echo Moaaz
+      - uses: actions/checkout@v3
+
+      - name: 'Before'
+        run: ls
+
+
